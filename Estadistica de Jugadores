@@ -1,0 +1,48 @@
+package main
+
+import "fmt"
+
+type jugadore struct {
+	nombre string
+	equipo string
+	partidos float64
+	goles float64
+}
+
+func main() {
+		Leo := jugadore{
+			nombre: "Leo Messi",
+			equipo: "Barcelona FC",
+			partidos: 208,
+			goles : 599,
+		}
+		fmt.Println("-------------------------------------------------")
+		fmt.Println("Nombre: ", Leo.nombre )
+		fmt.Println("Equipo actual: ", Leo.equipo)
+		fmt.Println("Partidos: ", Leo.partidos)
+		fmt.Println("Goles: ", Leo.goles)
+		fmt.Println("Promedio de goles: ", Leo.goles / Leo.partidos)
+
+		type jugadorp struct{
+			nombre string 
+			equipo string
+			partidos float64
+			goles float64
+		}
+
+		fmt.Println("-------------------------------------------------")
+
+		Roln := jugadorp{
+			nombre: "Crstiano Ronaldo",
+			equipo: "Real Madrid",
+			partidos: 239,
+			goles: 501,
+		}
+
+		fmt.Println("Nombre: ", Roln.nombre)
+		fmt.Println("Equipo actual: ", Roln.equipo)
+		fmt.Println("Partidos: ", Roln.partidos)
+		fmt.Println("Goles: ", Roln.goles)
+		fmt.Println("Promedio de goles: ", Roln.goles / Roln.partidos)
+		fmt.Println("-------------------------------------------------")
+	}	
